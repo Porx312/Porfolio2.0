@@ -1,0 +1,142 @@
+.container-menu{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--raisin-black);
+    height: 550px;
+    width: 150px;
+    transition: .2s ease all;
+    border-radius: 50px;
+    z-index: 10;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-btn-2{
+    display: none;
+}
+.text-menu{
+    color: var(--icon-textetc);
+    font-size: 2.5rem;
+    font-family: cursive;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.list-pages-options{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.menu-options:hover{
+    color: var(--cocoa-brown);
+}
+.menu-options{
+    text-decoration: none;
+    font-size: 1.4rem;
+
+    color: var( --icon-textetc);
+    transition: .2s ease ;
+}
+.content-menu-soons{
+    width: 100%;
+    border-radius: 40px;
+    background-color: var(--night);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1rem;
+    flex-direction: column;
+}
+.content-user{
+    width: 100%;
+    height: 180px;
+    border-radius: 40px;
+    background-color: var(--night);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1rem;
+    flex-direction: column;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+
+    border-radius: 360px;
+    overflow: hidden;
+}
+.avatar img{
+    object-fit: contain;
+    width: 100%;
+}
+.line{
+    width: 80%;
+    height: 2px;
+    background-color: var( --icon-textetc);
+}
+.btn-light{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .container-menu{
+        flex-direction: row;
+        width: 100%;
+
+        order: 1;
+        height: 100px;
+    }
+.container-menu{
+border-radius: 0;
+}
+.menu-options{
+font-size: 2.3rem;
+}
+.list-pages-options{
+flex-direction: row;
+width:100%;
+align-items: center;
+justify-content: space-between;
+}
+.home{
+    order: 2;
+    background-color: var(--cocoa-brown);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 360px;
+}
+.home:hover{
+    color: var(--night);
+}
+.order-menu1{
+    order: 1;
+}
+.order-menu2{
+    order:2;
+}
+.order-menu{
+    order: 4;
+}
+.text-menu{
+display: none;
+}
+.content-user{
+   display: none;
+}
+.menu-btn-2{
+    display: block;
+    order: 5;
+}
+.content-menu-soons{
+    background-color: transparent;
+}
+
+}

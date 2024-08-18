@@ -1,0 +1,15 @@
+    .container-card2{
+        width: 150px;
+        height: 200px;
+
+        border-radius: 30px;
+        background-color: var(--raisin-black);
+        border: 10px solid var(--night);
+        z-index: 10;
+    }
+    @media only screen and (max-width: 600px) {
+        .container-card2{
+            display: none;
+        }
+    }
+    

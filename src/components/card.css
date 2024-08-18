@@ -1,0 +1,44 @@
+.card-content{
+    background-color: var(--raisin-black);
+    border-radius: 60px;
+    border-top-right-radius: 80px;
+    height: 220px;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    z-index: 10;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 12px solid var(--night);
+    overflow: hidden;
+}
+.card-button{
+    border-radius: 360px;
+    background-color: var(--icon-textetc);
+    width: 80px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: var(    --night);
+    transition: .2s ease;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-size: 2rem;
+}
+.content-button-card{
+    width: 100px;
+    border-radius: 0px 50px 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color:var(--night);
+}
+.card-button:hover{
+    transform: scale(1.1);
+}

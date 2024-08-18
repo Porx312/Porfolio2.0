@@ -1,0 +1,65 @@
+:root {
+  --african-violet: rgb(0, 183, 255);
+  --cocoa-brown: #DD6A11ff;
+  --raisin-black: #1C1C24ff;
+  --icon-textetc: white;
+  --night: #0D0D0Dff;
+  --garnet: #722626ff;
+}
+.dark-mode {
+  --african-violet: #A289BFff;
+  --cocoa-brown: #DD6A11ff;
+  --raisin-black: rgb(240, 239, 239);
+  --icon-textetc: black;
+
+  --night: rgb(255, 255, 255);
+  --garnet: #722626ff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  width: 100%;  
+  min-height: 100vh;
+}
+.content-portfolio{
+  background-color: var(--night);
+  width: 100%;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  min-height: 100vh;
+}
+.container-menuandcard{
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 600px) {
+  main{
+    padding-bottom: 5rem;
+  }
+.content-portfolio{
+  padding: 0;
+  gap: 0;
+}
+  .container-menuandcard{
+      position: fixed;
+      bottom: 0;
+      background-color: #0D0D0Dff;
+      height: auto;
+      width: 100%;
+      z-index: 1000;
+  }
+ 
+}
